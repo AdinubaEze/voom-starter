@@ -1,0 +1,39 @@
+:root{
+  --primary:#0b5cff;
+  --primary-accent:#ff3187;
+  --color-white:#ffffff; 
+  --color-text:#111111;
+  --color-muted: #545457;
+  --transition:all 400ms ease;
+  --bg-primary: #dddddd;
+  --bg-primary-rgb:221, 221, 221;
+  --bg-secondary:#FFFFFF;
+  --bg-secondary-rgb:255, 255, 255;
+  --bg-variant: #e9e6e6;
+  --bg-variant-rgb: 233, 230, 230;
+  --gradient-1:linear-gradient(to right, var(--primary) 0%, var(--primary-accent) 100%);
+  --inner-glow: inset 0 0 0.5px 1px hsla(0, 0%,  
+             100%, 0.075),
+             /* shadow ring 👇 */
+             0 0 0 1px hsla(0, 0%, 0%, 0.05),
+             /* multiple soft shadows 👇 */
+             0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+             0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+             0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+  --bg-gradient-1:var(--bg-secondary);
+}
+
+[data-theme="dark"] {
+    --color-text:#FFFFFF;
+    --bg-primary: #0A0A0C;
+    --bg-primary-rgb: 10, 10, 12;
+    --bg-secondary: #171719;
+    --bg-secondary-rgb:23, 23, 25;
+    --bg-variant: #1b1b1e;
+    --bg-variant-rgb: 27, 27, 30;
+    --bg-gradient-1:linear-gradient(to bottom right,
+     rgba(var(--bg-secondary-rgb),.7),
+     rgba(var(--bg-primary-rgb),.5),
+     rgba(var(--bg-secondary-rgb),.7)
+   ); 
+}
